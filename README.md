@@ -1,7 +1,7 @@
 # boto3-practice
 AWS Lambda and boto3
 
-#boto3-practice/ec2/
+# boto3-practice/ec2/
 Steps to be followed to run the code in AWS Lambda
 1. Start EC2 instances(atleast 2)
 2. Create IAM Role and give EC2 and Cloudwatch full access

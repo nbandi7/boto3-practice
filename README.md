@@ -17,3 +17,14 @@ Steps to be followed to start the **stopped EC2 instacnes** run the code in AWS 
 	a. Choose Runtime environment 3.7
 	b. Select the role that you created
 	c. Use startEC2.py code for lambda function	
+
+To automate the process Create **Cloudwatch Rule**
+1. stopEC2Rule
+	a. Event Source -> Scheduled
+	b. Give cron expresison for the time you needed to stop EC2 in GMT Time
+	c. Add Target stopEC2
+
+2. startEC2Rule
+	a. Event Source - Scheduled
+	b. Give cron expression for the time you needed to start EC2 in GMT Time
+	b. Add Target startEC2
